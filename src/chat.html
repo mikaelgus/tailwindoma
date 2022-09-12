@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Socket Chat</title>
+  </head>
+  </head>
+  <body
+    class="container mx-auto max-w-md bg-mg-quick-silver rounded border-2 border-mg-jet"
+  >
+    <main class="bg-mg-white">
+      <form id="form" class="bg-mg-white p-4">
+        <input
+          class="rounded border-2 border-mg-jet p-1"
+          type="text"
+          id="mes"
+          autocomplete="off"
+        />
+        <button
+          class="rounded border-2 border-mg-davys-grey btn-yellow p-1"
+          type="button"
+        >
+          Lähetä
+        </button>
+      </form>
+      <section class="bg-mg-white rounded border-2 border-mg-jet h-80 m-2">
+        <h2 class="pl-5 pt-2 underline">Chat-tekstit:</h2>
+        <ul id="messages" class="p-2 m-2"></ul>
+      </section>
+    </main>
+  </body>
+</html>
