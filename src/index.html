@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
-  <body class="container mx-auto max-w-7xl bg-mg-white sm:bg-mg-quick-silver">
+  <body class="container mx-auto max-w-7xl bg-mg-white">
     <nav class="bg-mg-white">
       <div class="block mt-1 p-3 sm:w-72">
         <h1 class="text-center bg-mg-white w-auto text-mg-jet  sm:text-left">
@@ -24,7 +24,7 @@
       <div class="md:basis-1/4 p-2">
         <h1 class="text-center sm:max-w-md md:text-left">Luovuus sinun työssäsi? Mitä luovuus työelämässä mahdollistaa?</h1>
       </div>
-      <div class="">
+      <div class="flex flex-wrap justify-center">
         <img
         src="/src/media/chaplin_no_bg.png"
         alt="harmaasävykuva Charlie Chaplinista"
@@ -66,10 +66,11 @@
           Luovuus tuo mahdollisuuksia kaikilla aloilla!
         </p>
         <p>Tapahtumaan on rajoitettu määrä paikkoja, ilmoittaudu ajoissa.</p>
+        <div class="btn-yellow mt-5">Avaa striimi</div>
       </div>
     </section>
     <section class="bg-mg-jet text-mg-white container mx-auto max-w-4xl">
-      <div class="p-10">
+      <div class="p-14">
         <h2 class="pb-2">Tiesitkö että…</h2>
         <p>… Yhteys omaan luovuuteen ja ilmaisuun on ihmisen perustarve.<br><br>… Kaikilla ihmisillä on mielen vapautta ja luovaa toimintaa tarvitseva puoli.</p>
         <p>… Luovuus on käyttövoimaa uusien ratkaisujen ja näkökulmien syntymiselle.</p>
@@ -85,17 +86,18 @@
       </div>
       
     </section>
-    <section class="bg-mg-white">
+    <section class="bg-mg-white container mx-auto max-w-2xl p-10">
       <p>Luova toiminta, itsensä ilmaiseminen, kulttuurinen toimijuus ja taidekokemukset lisäävät osallisuutta ja hyvinvointia&nbsp; ja ovat siksi tärkeä osa yksilön merkityksellistä elämää ja koko yhteiskuntaa. Viime vuosina aiheesta on saatu paljon tutkimustietoa. Mitä voimme viedä tutkimuksesta käytäntöön?</p>
-      <div class="btn-yellow">Chatti</div>
-      <div class="btn-yellow">Striimi</div>
+      <div class="btn-yellow mt-5">Avaa chatti</div>
     </section>
     
     <footer class="bg-mg-jet text-mg-white">
-      <div><img src="/src/media/metropolia-logo-white-transparent-bg.png" alt="Metropolian logo"></div>
-      <div>Kulttuurihyvinvointi@metropolia.fi</div>
-      <div>#mahdollisuuksienmaisemia</div>
-      <div>© Metropolian Ammattikorkeakoulu 2022</div>
+      <div class="p-6"><img src="/src/media/metropolia-logo-white-transparent-bg.png" alt="Metropolian logo"></div>
+      <div class="flex flex-wrap justify-center">
+        <div class=" p-2">Kulttuurihyvinvointi@metropolia.fi</div>
+        <div class="p-2">#mahdollisuuksienmaisemia</div>
+      </div>
+      <div class="flex justify-center pt-4 pb-10">© Metropolian Ammattikorkeakoulu 2022</div>
     </footer>
   </body>
 </html>
