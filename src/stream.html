@@ -9,69 +9,74 @@
     <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
 
     <style>
-        /* Change all text and icon colors in the player. */
-        .vjs-matrix.video-js {
-        color: #F1D302;
-        }
+      /* Change all text and icon colors in the player. */
+      .vjs-matrix.video-js {
+        color: #f1d302;
+      }
 
-        /* Change the border of the big play button. */
-        .vjs-matrix .vjs-big-play-button {
-        border-color: #F1D302;
+      /* Change the border of the big play button. */
+      .vjs-matrix .vjs-big-play-button {
+        border-color: #f1d302;
         top: 40%;
         left: 40%;
-        }
+      }
 
-        /* Change the color of various "bars". */
-        .vjs-matrix .vjs-volume-level,
-        .vjs-matrix .vjs-play-progress,
-        .vjs-matrix .vjs-slider-bar {
-        background: #F1D302;
-        }
+      /* Change the color of various "bars". */
+      .vjs-matrix .vjs-volume-level,
+      .vjs-matrix .vjs-play-progress,
+      .vjs-matrix .vjs-slider-bar {
+        background: #f1d302;
+      }
     </style>
     <title>Striimi & Chat</title>
   </head>
-  </head>
-  <body
-    class="container mx-auto max-w-7xl bg-mg-white">
+
+  <body class="container mx-auto max-w-7xl bg-mg-white">
     <nav class="bg-mg-white">
       <div class="block mt-1 p-3 sm:w-72">
-        <h1 class="text-center bg-mg-white w-auto text-mg-jet  sm:text-left">
-        Mahdollisuuksien maisemia
-      </h1>
-    </div>
+        <h1 class="text-center bg-mg-white w-auto text-mg-jet sm:text-left">
+          Mahdollisuuksien maisemia
+        </h1>
+      </div>
       <div class="block bg-mg-white w-auto text-center pb-3">
-        <link>Etusivu</link>
-        <link>Ajankohtaista</link>
-        <link>Ohjelma</link>
-        <link>Striimi</link>
-        <link>Yhteystiedot</link>
+        <a href="index.html" class="btn-yellow">Etusivu</a>
+        <a href="#" class="btn-yellow">Ajankohtaista</a>
+        <a href="#" class="btn-yellow">Ohjelma</a>
+        <a href="stream.html" class="btn-yellow">Striimi</a>
+        <a href="#" class="btn-yellow">Yhteystiedot</a>
       </div>
     </nav>
-    <header class="bg-header-image bg-center bg-cover justify-center md:items-center sm:flex sm:flex-wrap">
-
-      <section class="container max-w-md p-4">
-        <h2 class="pl-5 pt-2">VIDEO - STRIIMI</h2>
+    <header
+      class="bg-header-image bg-center bg-cover justify-center sm:flex sm:flex-wrap p-10"
+    >
+      <section class="basis-1/2 max-w-lg h-72 m-2 md:mt-8">
+        <div class="flex justify-center">
+          <h2 class="pl-6 pt-2">VIDEO - STRIIMI</h2>
+        </div>
         <video
-            id="my-video"
-            class="video-js vjs-matrix rounded border-2 border-mg-jet"
-            poster="/src/media/mahdollisuus_bg.png"
-            data-setup='{"fluid": true, "controls": true}'
+          id="my-video"
+          class="video-js vjs-matrix rounded border-2 border-mg-jet"
+          poster="/src/media/mahdollisuus_bg.png"
+          data-setup='{"fluid": true, "controls": true}'
         >
-        <source src="/src/media/mikael.mp4" type="video/mp4">
-        <!--<source
+          <source src="/src/media/mikael.mp4" type="video/mp4" />
+          <!--<source
         src="http://192.168.1.215:1935/live/wowza/playlist.m3u8"
         type="application/x-mpegURL"
       />-->
-        
-        <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-          </video>
+
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading
+            to a web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
       </section>
       <!--Chatti-->
-      <section>
-        <form id="form" class=" p-4">
+      <section class="basis-1/2 max-w-lg">
+        <form id="form" class="p-2">
           <input
             class="rounded border-2 border-mg-jet p-1"
             type="text"
@@ -80,18 +85,17 @@
             autocomplete="off"
           />
           <button
-            class="rounded border-2 border-mg-davys-grey btn-yellow p-1"
+            class="rounded border-2 border-mg-davys-grey btn-yellow p-1 w-20"
             type="button"
           >
             Aseta
           </button>
         </form>
-        <div class="bg-mg-white rounded border-2 border-mg-jet h-80 m-2">
-          <h2 class="pl-5 pt-2 underline">Chat-tekstit:</h2>
-          <ul id="messages" class="p-2 m-2"></ul>
+        <div class="bg-mg-white rounded border-2 border-mg-jet h-72 m-2">
+          <ul id="messages" class=""></ul>
         </div>
 
-        <form id="form" class=" p-4">
+        <form id="form" class="p-2">
           <input
             class="rounded border-2 border-mg-jet p-1"
             type="text"
@@ -100,7 +104,7 @@
             autocomplete="off"
           />
           <button
-            class="rounded border-2 border-mg-davys-grey btn-yellow p-1"
+            class="rounded border-2 border-mg-davys-grey btn-yellow p-1 w-20"
             type="button"
           >
             Lähetä
@@ -109,12 +113,19 @@
       </section>
     </header>
     <footer class="bg-mg-jet text-mg-white">
-      <div class="p-6"><img src="/src/media/metropolia-logo-white-transparent-bg.png" alt="Metropolian logo"></div>
+      <div class="p-6">
+        <img
+          src="/src/media/metropolia-logo-white-transparent-bg.png"
+          alt="Metropolian logo"
+        />
+      </div>
       <div class="flex flex-wrap justify-center">
-        <div class=" p-2">Kulttuurihyvinvointi@metropolia.fi</div>
+        <div class="p-2">Kulttuurihyvinvointi@metropolia.fi</div>
         <div class="p-2">#mahdollisuuksienmaisemia</div>
       </div>
-      <div class="flex justify-center pt-4 pb-10">© Metropolian Ammattikorkeakoulu 2022</div>
+      <div class="flex justify-center pt-4 pb-10">
+        © Metropolian Ammattikorkeakoulu 2022
+      </div>
     </footer>
 
     <script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script>
